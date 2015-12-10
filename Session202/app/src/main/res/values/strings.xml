@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rainbow</string>
+    <string name="vio">VIOLET</string>
+    <string name="ind">INDIGO</string>
+    <string name="bl">BLUE</string>
+    <string name="gre">GREEN</string>
+    <string name="yel">YELLOW</string>
+    <string name="ora">ORANGE</string>
+    <string name="red">RED</string>
+</resources>
