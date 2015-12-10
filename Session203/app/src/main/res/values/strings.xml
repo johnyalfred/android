@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Credit Card Helper</string>
+    <string name="cb">Enter Card Balance($)</string>
+    <string name="ir">Enter Early Interest Rate(%)</string>
+    <string name="mp">Enter Minimum Payment($)</string>
+    <string name="fcb">Final card Balance($)</string>
+    <string name="mr">Months Remaining</string>
+    <string name="ip">Interest Paid Will Be($)</string>
+    <string name="com">COMPUTE</string>
+    <string name="clr">CLEAR</string>
+
+
+
+
+
+</resources>
