@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/colormenu"
+        android:title="TEXT COLOR"
+        myapp:showAsAction="ifRoom">
+<menu>
+        <group android:id="@+id/colorid" >
+            <item android:id="@+id/rd" android:title="Red" />
+            <item android:id="@+id/gr" android:title="Green" />
+            <item android:id="@+id/bl" android:title="Blue" />
+        </group>
+    </menu>
+        </item>
+    </menu>
