@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/albumInstance"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/grid_background_default">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.johny.musicplayer.view.SquareImageViewH
+            android:id="@+id/instanceArt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:contentDescription="@string/description_album_art"
+            android:background="@android:color/black"
+            android:src="@drawable/album_art" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="68dp"
+            android:paddingLeft="@dimen/grid_padding"
+            android:layout_below="@id/instanceArt">
+
+            <ImageView
+                android:id="@+id/instanceMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/grid_padding"
+                android:scaleType="center"
+                android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/instanceTitle"
+                style="@style/gridTitleText"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/grid_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toLeftOf="@id/instanceMore"
+                android:layout_toStartOf="@id/instanceMore"
+                android:text="Album" />
+
+            <TextView
+                android:id="@+id/instanceDetail"
+                style="@style/gridDetailText"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/grid_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toLeftOf="@id/instanceMore"
+                android:layout_toStartOf="@+id/instanceMore"
+                android:text="Artist" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/aboutScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/colorPrimary"
+        android:paddingLeft="@dimen/global_padding"
+        android:paddingRight="@dimen/global_padding">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/list_padding"
+            android:paddingRight="@dimen/list_padding">
+
+            <ImageView
+                android:id="@+id/aboutAppIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/aboutAppName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutAppIcon"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/aboutVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutAppName"
+                android:gravity="center"
+                android:text="@string/about_version"
+                android:textColor="@color/about_detail_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutVersion"
+                android:layout_marginTop="16dp"
+                android:text="@string/about_description"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/lastFmHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutDescription"
+                android:layout_marginTop="16dp"
+                android:text="@string/lastfm_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <ImageView
+                android:id="@+id/lastFmDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/lastFmHeader"
+
+                android:textColor="@color/about_detail_text"
+                android:contentDescription="@string/lastfm_description"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutUsesHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastFmDetail"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_header"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutAOSPHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsesHeader"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_aosp_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutAOSPDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutAOSPHeader"
+                android:text="@string/uses_aosp_detail"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_detail_size" />
+
+            <TextView
+                android:id="@+id/aboutGsonHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutAOSPDetail"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_gson_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutGsonDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutGsonHeader"
+                android:text="@string/uses_gson_detail"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_detail_size" />
+
+            <TextView
+                android:id="@+id/aboutPicassoHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutGsonDetail"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_glide_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutPicassoDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutPicassoHeader"
+                android:text="@string/uses_glide_detail"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_detail_size" />
+
+            <TextView
+                android:id="@+id/aboutVerticalSeekBarHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutPicassoDetail"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_vert_slider_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <TextView
+                android:id="@+id/aboutVerticalSeekBarDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutVerticalSeekBarHeader"
+                android:text="@string/uses_vert_slider_detail"
+                android:textColor="@color/about_detail_text"
+                android:textSize="@dimen/list_text_detail_size" />
+
+            <TextView
+                android:id="@+id/aboutStackOverflowHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutVerticalSeekBarDetail"
+                android:layout_marginTop="16dp"
+                android:text="@string/uses_stackoverflow"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_text_header_size" />
+
+            <RelativeLayout
+                android:id="@+id/aboutMarverenicLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutStackOverflowHeader"
+                android:layout_margin="@dimen/list_padding"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/aboutMarverenicIcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/list_padding"
+                    android:paddingLeft="@dimen/list_padding"
+                    android:paddingRight="@dimen/list_padding"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/aboutMarverenicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutMarverenicIcon"
+                    android:paddingBottom="@dimen/list_padding"
+                    android:textColor="@android:color/white"
+                    android:text="JMusic"
+                    android:textAllCaps="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

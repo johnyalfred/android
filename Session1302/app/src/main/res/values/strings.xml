@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Session1302</string>
+    <string name="Fragment1">This is Audio Fragment Sample</string>
+    <string name="Fragment2">This is Video Fragment Sample</string>
+</resources>
